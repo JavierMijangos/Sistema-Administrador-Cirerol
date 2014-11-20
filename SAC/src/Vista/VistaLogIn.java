@@ -26,6 +26,7 @@ public class VistaLogIn extends javax.swing.JFrame {
             e.printStackTrace();
         }
         initComponents();
+        setLocationRelativeTo(null);
         controladorAcceso = new ControladorAcceso();
     }
 

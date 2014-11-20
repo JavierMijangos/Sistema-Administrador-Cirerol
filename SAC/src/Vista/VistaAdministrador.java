@@ -24,6 +24,7 @@ public class VistaAdministrador extends javax.swing.JFrame {
             e.printStackTrace();
         }
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

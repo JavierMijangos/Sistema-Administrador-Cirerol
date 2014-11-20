@@ -24,6 +24,7 @@ public class VistaOptometrista extends javax.swing.JFrame {
             e.printStackTrace();
         }
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

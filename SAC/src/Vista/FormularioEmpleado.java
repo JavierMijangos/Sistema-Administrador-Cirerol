@@ -27,6 +27,7 @@ public class FormularioEmpleado extends javax.swing.JFrame {
             e.printStackTrace();
         }
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

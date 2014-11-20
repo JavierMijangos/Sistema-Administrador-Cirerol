@@ -24,6 +24,7 @@ public class VistaVendedor extends javax.swing.JFrame {
             e.printStackTrace();
         }
         initComponents();
+        setLocationRelativeTo(null);
         buttonGroup1.add(jRadioButtonContado);
         buttonGroup1.add(jRadioButtonAbonos);
         
