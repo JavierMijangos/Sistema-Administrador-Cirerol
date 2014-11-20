@@ -6,6 +6,8 @@
 
 package Vista;
 
+import javax.swing.UIManager;
+
 /**
  *
  * @author Asus
@@ -16,6 +18,11 @@ public class VistaOptometrista extends javax.swing.JFrame {
      * Creates new form VistaOptometrista
      */
     public VistaOptometrista() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         initComponents();
     }
 

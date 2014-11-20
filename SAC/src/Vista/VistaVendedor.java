@@ -6,6 +6,8 @@
 
 package Vista;
 
+import javax.swing.UIManager;
+
 /**
  *
  * @author Asus
@@ -16,6 +18,11 @@ public class VistaVendedor extends javax.swing.JFrame {
      * Creates new form VistaVendedor
      */
     public VistaVendedor() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         initComponents();
         buttonGroup1.add(jRadioButtonContado);
         buttonGroup1.add(jRadioButtonAbonos);

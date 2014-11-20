@@ -6,6 +6,8 @@
 
 package Vista;
 
+import javax.swing.UIManager;
+
 /**
  *
  * @author Asus
@@ -16,6 +18,11 @@ public class VistaAdministrador extends javax.swing.JFrame {
      * Creates new form VistaAdministrador
      */
     public VistaAdministrador() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         initComponents();
     }
 

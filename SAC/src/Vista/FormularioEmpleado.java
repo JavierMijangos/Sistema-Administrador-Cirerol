@@ -7,6 +7,7 @@
 package Vista;
 
 import controlador.ControladorEmpleado;
+import javax.swing.UIManager;
 import modelo.Empleado;
 import modelo.Usuario;
 
@@ -20,6 +21,11 @@ public class FormularioEmpleado extends javax.swing.JFrame {
      * Creates new form FormularioEmpleado
      */
     public FormularioEmpleado() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         initComponents();
     }
 

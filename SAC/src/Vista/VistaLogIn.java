@@ -8,6 +8,7 @@ package Vista;
 
 import controlador.ControladorAcceso;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 
 /**
  *
@@ -19,6 +20,11 @@ public class VistaLogIn extends javax.swing.JFrame {
      * Creates new form VistaLogIn
      */
     public VistaLogIn() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         initComponents();
         controladorAcceso = new ControladorAcceso();
     }
